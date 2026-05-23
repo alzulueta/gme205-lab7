@@ -8,7 +8,7 @@ CORS(app)
 
 def geojson_response(geojson_data):
     return Response(
-        json.dumps(geojson_data, indent=4),
+        json.dumps(geojson_data, indent=4), # Serialize with indentation for readability
         mimetype="application/geo+json"
     )
 
